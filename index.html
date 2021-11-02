@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/card.css">
+</head>
+<body>
+
+<div class="container" >
+  <h1>Weather App</h1>
+  <div>
+    <h2>Tippen Sie bitte die Name einer Stadt</h2>
+    <form class="form" action="#">
+      <fieldset class="form-fieldset ui-input __first">
+        <input type="text" id="cityname" placeholder="Berlin" tabindex="0" />
+        <label for="cityname">
+          <span data-text="Stadt Name">Stadt</span>
+        </label>
+      </fieldset>
+
+      <div class="form-footer">
+        <button class="btn" id="search">Suchen</button>
+      </div>
+    </form>
+  </div>
+
+</div>
+
+
+<div class="title" id="title">Berlin</div>
+
+<div class="cards" id="card_container">
+  <div class="weather card">
+    <svg id="inner">
+      <defs>
+        <path id="leaf" d="M41.9,56.3l0.1-2.5c0,0,4.6-1.2,5.6-2.2c1-1,3.6-13,12-15.6c9.7-3.1,19.9-2,26.1-2.1c2.7,0-10,23.9-20.5,25 c-7.5,0.8-17.2-5.1-17.2-5.1L41.9,56.3z"/>
+      </defs>
+      <circle id="sun" style="fill: #F7ED47" cx="0" cy="0" r="50"/>
+      <g id="layer3"></g>
+      <g id="cloud3" class="cloud"></g>
+      <g id="layer2"></g>
+      <g id="cloud2" class="cloud"></g>
+      <g id="layer1"></g>
+      <g id="cloud1" class="cloud"></g>
+    </svg>
+    <div class="details">
+      <div class="temp" id="temp0">20<span>c</span></div>
+      <div class="right">
+        <div class="date" id="date0">2021-10-06</div>
+        <div class="summary"></div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div>min Temperatur: <span id="minTemp0"></span> c</div>
+      <div>max Temparatur: <span id="maxTemp0"></span> c</div>
+      <div>Beschreibung: <span id="description0"></span></div>
+    </div>
+  </div>
+  <div class="weather card">
+    <svg id="inner">
+      <defs>
+        <path id="leaf" d="M41.9,56.3l0.1-2.5c0,0,4.6-1.2,5.6-2.2c1-1,3.6-13,12-15.6c9.7-3.1,19.9-2,26.1-2.1c2.7,0-10,23.9-20.5,25 c-7.5,0.8-17.2-5.1-17.2-5.1L41.9,56.3z"/>
+      </defs>
+      <circle id="sun" style="fill: #F7ED47" cx="0" cy="0" r="50"/>
+      <g id="layer3"></g>
+      <g id="cloud3" class="cloud"></g>
+      <g id="layer2"></g>
+      <g id="cloud2" class="cloud"></g>
+      <g id="layer1"></g>
+      <g id="cloud1" class="cloud"></g>
+    </svg>
+    <div class="details">
+      <div class="temp" id="temp1">20<span>c</span></div>
+      <div class="right">
+        <div class="date" id="date1">2021-10-06</div>
+        <div class="summary"></div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div>min Temperatur: <span id="minTemp1"></span> c</div>
+      <div>max Temparatur: <span id="maxTemp1"></span> c</div>
+      <div>Beschreibung: <span id="description1"></span></div>
+    </div>
+  </div>
+  <div class="weather card">
+  <svg id="inner">
+    <defs>
+      <path id="leaf" d="M41.9,56.3l0.1-2.5c0,0,4.6-1.2,5.6-2.2c1-1,3.6-13,12-15.6c9.7-3.1,19.9-2,26.1-2.1c2.7,0-10,23.9-20.5,25 c-7.5,0.8-17.2-5.1-17.2-5.1L41.9,56.3z"/>
+    </defs>
+    <circle id="sun" style="fill: #F7ED47" cx="0" cy="0" r="50"/>
+    <g id="layer3"></g>
+    <g id="cloud3" class="cloud"></g>
+    <g id="layer2"></g>
+    <g id="cloud2" class="cloud"></g>
+    <g id="layer1"></g>
+    <g id="cloud1" class="cloud"></g>
+  </svg>
+  <div class="details">
+    <div class="temp" id="temp2">20<span>c</span></div>
+    <div class="right">
+      <div class="date" id="date2">2021-10-06</div>
+      <div class="summary"></div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div>min Temperatur: <span id="minTemp2"></span> c</div>
+    <div>max Temparatur: <span id="maxTemp2"></span> c</div>
+    <div>Beschreibung: <span id="description2"></span></div>
+  </div>
+</div>
+  <div class="weather card">
+    <svg id="inner">
+      <defs>
+        <path id="leaf" d="M41.9,56.3l0.1-2.5c0,0,4.6-1.2,5.6-2.2c1-1,3.6-13,12-15.6c9.7-3.1,19.9-2,26.1-2.1c2.7,0-10,23.9-20.5,25 c-7.5,0.8-17.2-5.1-17.2-5.1L41.9,56.3z"/>
+      </defs>
+      <circle id="sun" style="fill: #F7ED47" cx="0" cy="0" r="50"/>
+      <g id="layer3"></g>
+      <g id="cloud3" class="cloud"></g>
+      <g id="layer2"></g>
+      <g id="cloud2" class="cloud"></g>
+      <g id="layer1"></g>
+      <g id="cloud1" class="cloud"></g>
+    </svg>
+    <div class="details">
+      <div class="temp" id="temp3">20<span>c</span></div>
+      <div class="right">
+        <div class="date" id="date3">2021-10-06</div>
+        <div class="summary"></div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div>min Temperatur: <span id="minTemp3"></span> c</div>
+      <div>max Temparatur: <span id="maxTemp3"></span> c</div>
+      <div>Beschreibung: <span id="description3"></span></div>
+    </div>
+  </div>
+  <div class="weather card">
+    <svg id="inner">
+      <defs>
+        <path id="leaf" d="M41.9,56.3l0.1-2.5c0,0,4.6-1.2,5.6-2.2c1-1,3.6-13,12-15.6c9.7-3.1,19.9-2,26.1-2.1c2.7,0-10,23.9-20.5,25 c-7.5,0.8-17.2-5.1-17.2-5.1L41.9,56.3z"/>
+      </defs>
+      <circle id="sun" style="fill: #F7ED47" cx="0" cy="0" r="50"/>
+      <g id="layer3"></g>
+      <g id="cloud3" class="cloud"></g>
+      <g id="layer2"></g>
+      <g id="cloud2" class="cloud"></g>
+      <g id="layer1"></g>
+      <g id="cloud1" class="cloud"></g>
+    </svg>
+    <div class="details">
+      <div class="temp" id="temp4">20<span>c</span></div>
+      <div class="right">
+        <div class="date" id="date4">2021-10-06</div>
+        <div class="summary"></div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div>min Temperatur: <span id="minTemp4"></span> c</div>
+      <div>max Temparatur: <span id="maxTemp4"></span> c</div>
+      <div>Beschreibung: <span id="description4"></span></div>
+    </div>
+  </div>
+
+</div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
